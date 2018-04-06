@@ -26,5 +26,6 @@ public class Plan {
 		Slovo slovo5 = new Slovo ("auto", "car");
 		Slovo slovo6 = new Slovo ("okno", "window");
 	}
+	
 
 }

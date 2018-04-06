@@ -30,9 +30,6 @@ public class App extends javafx.application.Application {
 		loader.setLocation(getClass()
 		          .getResource("/Home.fxml"));
 		Parent root = loader.load();
-
-		HomeController controller = loader.getController();
-		controller.inicializuj(new  Plan());
 		
         primaryStage.setTitle("ANGLIČTINA HROU!");
         primaryStage.setScene(new Scene(root));
