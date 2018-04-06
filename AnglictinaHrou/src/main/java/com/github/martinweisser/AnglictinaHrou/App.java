@@ -32,7 +32,7 @@ public class App extends javafx.application.Application {
 		Parent root = loader.load();
 
 		HomeController controller = loader.getController();
-		controller.inicializuj(new  Hra());
+		controller.inicializuj(new  Plan());
 		
         primaryStage.setTitle("ANGLIČTINA HROU!");
         primaryStage.setScene(new Scene(root));
