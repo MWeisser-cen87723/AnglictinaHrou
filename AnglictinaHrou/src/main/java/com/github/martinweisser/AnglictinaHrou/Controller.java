@@ -85,6 +85,7 @@ public class Controller {
 		tipWindow.setVisible(true);
 		tipText.setEditable(true);
 		statistikaWindow.setVisible(true);
+		statistika.setEditable(false);
 		
         if (nahodne == 1) {
         		bear.setVisible(true);
@@ -143,7 +144,15 @@ public class Controller {
         		tipText.setText("");
         		noveOkno();
         		zobrazeniObrazku();
+        		tipWindow.setVisible(false);
         		
+        }
+        
+        @FXML public void nullStatistiky() {
+        		spatna = 0;
+        		spravna = 0;
+        		statistika.setText("Správně: " + spravna + "     Špatně: " + spatna);
+        		statistikaWindow.setVisible(false);
         }
         
         public void nahodnaCisla() {
