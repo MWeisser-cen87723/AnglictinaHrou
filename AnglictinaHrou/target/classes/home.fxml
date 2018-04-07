@@ -80,7 +80,7 @@
                   <Image url="@car.jpg" />
                </image>
             </ImageView>
-            <Button layoutX="278.0" layoutY="401.0" mnemonicParsing="false" text="Hádej" />
+            <Button layoutX="278.0" layoutY="401.0" mnemonicParsing="false" onMouseClicked="#hadej" text="Hádej" />
             <ImageView id="bear" fx:id="bear" fitHeight="187.0" fitWidth="182.0" layoutX="44.0" layoutY="21.0" onMouseMoved="#bear" style="visibility: true;">
                <image>
                   <Image url="@bear.jpg" />
@@ -118,7 +118,7 @@
                </children>
             </TextFlow>
             <VBox layoutY="7.0" onMouseMoved="#viditelnostObrazku" prefHeight="15.0" prefWidth="640.0" />
-            <VBox layoutX="615.0" layoutY="8.0" prefHeight="360.0" prefWidth="19.0" />
+            <VBox layoutX="615.0" layoutY="8.0" onMouseMoved="#viditelnostObrazku" prefHeight="360.0" prefWidth="19.0" />
             <VBox layoutX="23.0" layoutY="339.0" onMouseMoved="#viditelnostObrazku" prefHeight="28.0" prefWidth="605.0" />
             <VBox layoutX="226.0" layoutY="15.0" onMouseMoved="#viditelnostObrazku" prefHeight="203.0" prefWidth="12.0" />
             <VBox layoutX="399.0" layoutY="17.0" onMouseMoved="#viditelnostObrazku" prefHeight="343.0" prefWidth="19.0" />

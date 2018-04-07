@@ -1,5 +1,7 @@
 package com.github.martinweisser.AnglictinaHrou;
 
+import java.util.Random;
+
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.TextFlow;
@@ -55,6 +57,40 @@ public class Controller {
 		flowerText.setVisible(false);
 		houseText.setVisible(false);
 		monkeyText.setVisible(false);
+	}
+	
+	@FXML public void hadej() {
+		Random cislo = new Random();
+        int  nahodne = cislo.nextInt(6) + 1;
+        
+        bear.setVisible(false);
+		window.setVisible(false);
+		car.setVisible(false);
+		flower.setVisible(false);
+		house.setVisible(false);
+		monkey.setVisible(false);
+		
+        if (nahodne == 1) {
+        		bear.setVisible(true);
+        } 
+        if (nahodne == 2) {
+    			window.setVisible(true);
+        } 
+        if (nahodne == 3) {
+    			car.setVisible(true);
+        } 
+        if (nahodne == 4) {
+    			flower.setVisible(true);
+        } 
+        if (nahodne == 5) {
+    			house.setVisible(true);
+        } 
+        if (nahodne == 6) {
+    			monkey.setVisible(true);
+        } 
+        
+        
+        
 	}
 
 }
