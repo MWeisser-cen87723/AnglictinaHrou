@@ -5,8 +5,8 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -18,45 +18,16 @@
   <children>
     <MenuBar prefHeight="28.0" prefWidth="640.0" VBox.vgrow="NEVER">
       <menus>
-        <Menu mnemonicParsing="false" text="File">
+        <Menu mnemonicParsing="false" text="Aplikace">
           <items>
-            <MenuItem mnemonicParsing="false" text="New" />
-            <MenuItem mnemonicParsing="false" text="Open…" />
-            <Menu mnemonicParsing="false" text="Open Recent" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Close" />
-            <MenuItem mnemonicParsing="false" text="Save" />
-            <MenuItem mnemonicParsing="false" text="Save As…" />
-            <MenuItem mnemonicParsing="false" text="Revert" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Preferences…" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Quit" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Edit">
-          <items>
-            <MenuItem mnemonicParsing="false" text="Undo" />
-            <MenuItem mnemonicParsing="false" text="Redo" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Cut" />
-            <MenuItem mnemonicParsing="false" text="Copy" />
-            <MenuItem mnemonicParsing="false" text="Paste" />
-            <MenuItem mnemonicParsing="false" text="Delete" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Select All" />
-            <MenuItem mnemonicParsing="false" text="Unselect All" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Help">
-          <items>
-            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+            <MenuItem mnemonicParsing="false" onAction="#nullStatistiky" text="Vynulovat statistiky" />
           </items>
         </Menu>
       </menus>
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
+            <VBox layoutX="29.0" layoutY="204.0" onMouseMoved="#viditelnostObrazku" prefHeight="15.0" prefWidth="226.0" />
             <ImageView id="flower" fx:id="flower" fitHeight="148.0" fitWidth="161.0" layoutX="238.0" layoutY="20.0" onMouseMoved="#flower">
                <image>
                   <Image url="@flower.jpg" />
@@ -82,7 +53,7 @@
                   <Image url="@car.jpg" />
                </image>
             </ImageView>
-            <Button layoutX="274.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#hadej" text="Hádej" />
+            <Button layoutX="274.0" layoutY="378.0" mnemonicParsing="false" onMouseClicked="#hadej" text="Hádej" />
             <ImageView id="bear" fx:id="bear" fitHeight="187.0" fitWidth="182.0" layoutX="44.0" layoutY="21.0" onMouseMoved="#bear" style="visibility: true;">
                <image>
                   <Image url="@bear.jpg" />
@@ -90,52 +61,54 @@
             </ImageView>
             <TextFlow fx:id="bearText" layoutX="44.0" layoutY="21.0" prefHeight="187.0" prefWidth="182.0" style="visibility: false;">
                <children>
-                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Medvěd" textAlignment="CENTER" wrappingWidth="178.232421875" />
+                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="bear" textAlignment="CENTER" wrappingWidth="178.232421875" />
                </children>
             </TextFlow>
             <VBox layoutX="1.0" onMouseMoved="#viditelnostObrazku" prefHeight="443.0" prefWidth="43.0" />
             <TextFlow fx:id="flowerText" layoutX="238.0" layoutY="21.0" prefHeight="148.0" prefWidth="161.0" style="visibility: false;">
                <children>
-                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Květina" />
+                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="flower" />
                </children>
             </TextFlow>
             <TextFlow fx:id="houseText" layoutX="415.0" layoutY="21.0" prefHeight="175.0" prefWidth="200.0" style="visibility: false;">
                <children>
-                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Dům" />
+                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="house" />
                </children>
             </TextFlow>
             <TextFlow fx:id="carText" layoutX="44.0" layoutY="217.0" prefHeight="122.0" prefWidth="200.0" style="visibility: false;">
                <children>
-                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Auto" />
+                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="car" />
                </children>
             </TextFlow>
             <TextFlow fx:id="monkeyText" layoutX="256.0" layoutY="174.0" prefHeight="165.0" prefWidth="144.0" style="visibility: false;">
                <children>
-                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Opice" />
+                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="monkey" />
                </children>
             </TextFlow>
             <TextFlow fx:id="windowText" layoutX="415.0" layoutY="200.0" prefHeight="139.0" prefWidth="200.0" style="visibility: false;">
                <children>
-                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Okno" />
+                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="window" />
                </children>
             </TextFlow>
             <VBox layoutY="7.0" onMouseMoved="#viditelnostObrazku" prefHeight="15.0" prefWidth="640.0" />
             <VBox layoutX="615.0" layoutY="8.0" onMouseMoved="#viditelnostObrazku" prefHeight="360.0" prefWidth="19.0" />
-            <VBox layoutX="23.0" layoutY="339.0" onMouseMoved="#viditelnostObrazku" prefHeight="28.0" prefWidth="605.0" />
+            <VBox layoutX="25.0" layoutY="339.0" onMouseMoved="#viditelnostObrazku" prefHeight="28.0" prefWidth="605.0" />
             <VBox layoutX="226.0" layoutY="15.0" onMouseMoved="#viditelnostObrazku" prefHeight="203.0" prefWidth="12.0" />
             <VBox layoutX="399.0" layoutY="17.0" onMouseMoved="#viditelnostObrazku" prefHeight="343.0" prefWidth="19.0" />
-            <VBox fx:id="tipWindow" layoutX="74.0" layoutY="407.0" prefHeight="88.0" prefWidth="291.0" style="visibility: true;">
+            <VBox fx:id="tipWindow" layoutX="74.0" layoutY="407.0" prefHeight="88.0" prefWidth="226.0" style="visibility: false;">
                <children>
                   <Label fx:id="tipLbl" prefHeight="17.0" prefWidth="321.0" text="Tvůj tip:" textAlignment="CENTER" />
-                  <TextArea fx:id="tipText" onKeyPressed="#tipuj" prefHeight="42.0" prefWidth="181.0" />
+                  <TextField fx:id="tipText" onAction="#tipuj" prefHeight="41.0" prefWidth="291.0" />
                </children>
             </VBox>
-            <VBox fx:id="statistikaWindow" layoutX="424.0" layoutY="405.0" prefHeight="59.0" prefWidth="161.0" style="visibility: true;">
+            <VBox fx:id="statistikaWindow" layoutX="344.0" layoutY="405.0" prefHeight="58.0" prefWidth="200.0" style="visibility: false;">
                <children>
                   <Label text="Statistika:" />
-                  <TextArea fx:id="statistika" prefHeight="43.0" prefWidth="184.0" />
+                  <TextArea fx:id="statistika" prefHeight="14.0" prefWidth="200.0" />
                </children>
             </VBox>
+            <VBox layoutX="243.0" layoutY="175.0" onMouseMoved="#viditelnostObrazku" prefHeight="175.0" prefWidth="12.0" />
+            <VBox layoutX="233.0" layoutY="169.0" onMouseMoved="#viditelnostObrazku" prefHeight="5.0" prefWidth="176.0" />
          </children>
     </AnchorPane>
       <VBox prefHeight="200.0" prefWidth="100.0" />
