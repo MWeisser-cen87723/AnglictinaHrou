@@ -15,6 +15,13 @@ import javafx.scene.text.TextFlow;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+/**
+ * Hlavní třída aplikace.
+ * Obsahuje veškerou logiku aplikace.
+ * 
+ * @author martinweisser
+ *
+ */
 public class Controller {
 
     @FXML private ImageView bear;
