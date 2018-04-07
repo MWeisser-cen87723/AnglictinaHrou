@@ -1,9 +1,8 @@
 package com.github.martinweisser.AnglictinaHrou;
 
-import java.awt.MouseInfo;
-
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
+import javafx.scene.text.TextFlow;
 
 public class Controller {
 	
@@ -13,25 +12,19 @@ public class Controller {
 	@FXML private ImageView car;
 	@FXML private ImageView house;
 	@FXML private ImageView window;
+	
+	@FXML private TextFlow bearText;
+	
+	private int spatna;
+	private int spravna;
 
-	/*@FXML public void ukazNazev( ) {
-		if (MouseInfo.getPointerInfo().getLocation().equals(bear)) {
-			bear.setToolTipText("medvěd");
-		}
-		if (MouseInfo.getPointerInfo().getLocation().equals(window)) {
-			window.setToolTipText("okno");
-		}
-		if (MouseInfo.getPointerInfo().getLocation().equals(car)) {
-			car.setToolTipText("auto");
-		}
-		if (MouseInfo.getPointerInfo().getLocation().equals(monkey)) {
-			monkey.setToolTipText("opice");
-		}
-		if (MouseInfo.getPointerInfo().getLocation().equals(house)) {
-			house.setToolTipText("dům");
-		}
-		if (MouseInfo.getPointerInfo().getLocation().equals(flower)) {
-			flower.setToolTipText("květina");
-		}
-	}*/
+	
+	@FXML public void bear() {
+		bearText.setVisible(true);
+	}
+	
+	@FXML public void viditelnostObrazku() {
+		bearText.setVisible(false);
+	}
+
 }
