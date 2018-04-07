@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.TextFlow;
 
 public class Controller {
@@ -26,6 +27,8 @@ public class Controller {
 	
 	@FXML private TextArea tipText;
 	@FXML private Label tipLbl;
+	@FXML private VBox tipWindow;
+	
 	
 	private int spatna;
 	private int spravna;
@@ -75,8 +78,7 @@ public class Controller {
 		house.setVisible(false);
 		monkey.setVisible(false);
 		
-		tipLbl.setVisible(true);
-		tipText.setVisible(true);
+		tipWindow.setVisible(true);
 		tipText.setEditable(true);
 		
         if (nahodne == 1) {
