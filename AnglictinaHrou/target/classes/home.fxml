@@ -124,10 +124,16 @@
             <VBox layoutX="23.0" layoutY="339.0" onMouseMoved="#viditelnostObrazku" prefHeight="28.0" prefWidth="605.0" />
             <VBox layoutX="226.0" layoutY="15.0" onMouseMoved="#viditelnostObrazku" prefHeight="203.0" prefWidth="12.0" />
             <VBox layoutX="399.0" layoutY="17.0" onMouseMoved="#viditelnostObrazku" prefHeight="343.0" prefWidth="19.0" />
-            <VBox fx:id="tipWindow" layoutX="152.0" layoutY="407.0" prefHeight="88.0" prefWidth="321.0" style="visibility: false;">
+            <VBox fx:id="tipWindow" layoutX="74.0" layoutY="407.0" prefHeight="88.0" prefWidth="291.0" style="visibility: true;">
                <children>
                   <Label fx:id="tipLbl" prefHeight="17.0" prefWidth="321.0" text="Tvůj tip:" textAlignment="CENTER" />
-                  <TextArea fx:id="tipText" prefHeight="42.0" prefWidth="181.0" />
+                  <TextArea fx:id="tipText" onKeyPressed="#tipuj" prefHeight="42.0" prefWidth="181.0" />
+               </children>
+            </VBox>
+            <VBox fx:id="statistikaWindow" layoutX="424.0" layoutY="405.0" prefHeight="59.0" prefWidth="161.0" style="visibility: true;">
+               <children>
+                  <Label text="Statistika:" />
+                  <TextArea fx:id="statistika" prefHeight="43.0" prefWidth="184.0" />
                </children>
             </VBox>
          </children>

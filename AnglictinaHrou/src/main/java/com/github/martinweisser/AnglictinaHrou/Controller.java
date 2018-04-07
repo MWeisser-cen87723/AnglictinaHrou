@@ -28,6 +28,8 @@ public class Controller {
 	@FXML private TextArea tipText;
 	@FXML private Label tipLbl;
 	@FXML private VBox tipWindow;
+	@FXML private VBox statistikaWindow;
+	@FXML private TextArea statistika;
 	
 	
 	private int spatna;
@@ -80,6 +82,7 @@ public class Controller {
 		
 		tipWindow.setVisible(true);
 		tipText.setEditable(true);
+		statistikaWindow.setVisible(true);
 		
         if (nahodne == 1) {
         		bear.setVisible(true);
@@ -98,10 +101,12 @@ public class Controller {
         } 
         if (nahodne == 6) {
     			monkey.setVisible(true);
-        } 
+        }  
+	}
         
-        
+        @FXML public void tipuj() {
+        }
         
 	}
 
-}
+
