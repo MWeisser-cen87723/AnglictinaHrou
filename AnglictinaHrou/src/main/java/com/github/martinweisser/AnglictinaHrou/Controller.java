@@ -3,6 +3,8 @@ package com.github.martinweisser.AnglictinaHrou;
 import java.util.Random;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.TextFlow;
 
@@ -21,6 +23,9 @@ public class Controller {
 	@FXML private TextFlow carText;
 	@FXML private TextFlow monkeyText;
 	@FXML private TextFlow flowerText;
+	
+	@FXML private TextArea tipText;
+	@FXML private Label tipLbl;
 	
 	private int spatna;
 	private int spravna;
@@ -69,6 +74,10 @@ public class Controller {
 		flower.setVisible(false);
 		house.setVisible(false);
 		monkey.setVisible(false);
+		
+		tipLbl.setVisible(true);
+		tipText.setVisible(true);
+		tipText.setEditable(true);
 		
         if (nahodne == 1) {
         		bear.setVisible(true);
