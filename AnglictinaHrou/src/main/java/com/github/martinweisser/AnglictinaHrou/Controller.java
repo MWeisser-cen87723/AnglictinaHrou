@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Tooltip;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
@@ -35,6 +36,8 @@ public class Controller {
 	@FXML private VBox tipWindow;
 	@FXML private VBox statistikaWindow;
 	@FXML private TextArea statistika;
+	
+	@FXML private Tooltip tooltip;
 	
 	
 	private int spatna;
@@ -153,6 +156,10 @@ public class Controller {
         		spravna = 0;
         		statistika.setText("Správně: " + spravna + "     Špatně: " + spatna);
         		statistikaWindow.setVisible(false);
+        }
+        
+        @FXML public void napovedaHadej() {
+        		tooltip.setText("Uhodni anglický název jednoho náhodně vybraného obrázku!");
         }
         
         public void nahodnaCisla() {
