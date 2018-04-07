@@ -55,27 +55,27 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <ImageView id="flower" fx:id="flower" fitHeight="148.0" fitWidth="161.0" layoutX="238.0" layoutY="20.0">
+            <ImageView id="flower" fx:id="flower" fitHeight="148.0" fitWidth="161.0" layoutX="238.0" layoutY="20.0" onMouseMoved="#flower">
                <image>
                   <Image url="@flower.jpg" />
                </image>
             </ImageView>
-            <ImageView id="house" fx:id="house" fitHeight="175.0" fitWidth="200.0" layoutX="415.0" layoutY="20.0">
+            <ImageView id="house" fx:id="house" fitHeight="175.0" fitWidth="200.0" layoutX="415.0" layoutY="20.0" onMouseMoved="#house">
                <image>
                   <Image url="@house.JPG" />
                </image>
             </ImageView>
-            <ImageView id="monkey" fx:id="monkey" fitHeight="165.0" fitWidth="144.0" layoutX="256.0" layoutY="174.0">
+            <ImageView id="monkey" fx:id="monkey" fitHeight="165.0" fitWidth="144.0" layoutX="256.0" layoutY="174.0" onMouseMoved="#monkey">
                <image>
                   <Image url="@monkey.jpg" />
                </image>
             </ImageView>
-            <ImageView id="window" fx:id="window" fitHeight="139.0" fitWidth="200.0" layoutX="415.0" layoutY="200.0">
+            <ImageView id="window" fx:id="window" fitHeight="139.0" fitWidth="200.0" layoutX="415.0" layoutY="200.0" onMouseMoved="#window">
                <image>
                   <Image url="@window.jpg" />
                </image>
             </ImageView>
-            <ImageView id="car" fx:id="car" fitHeight="122.0" fitWidth="200.0" layoutX="44.0" layoutY="217.0">
+            <ImageView id="car" fx:id="car" fitHeight="122.0" fitWidth="200.0" layoutX="44.0" layoutY="217.0" onMouseMoved="#car">
                <image>
                   <Image url="@car.jpg" />
                </image>
@@ -88,10 +88,40 @@
             </ImageView>
             <TextFlow fx:id="bearText" layoutX="44.0" layoutY="21.0" prefHeight="187.0" prefWidth="182.0" style="visibility: false;">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Medvěd" wrappingWidth="125.232421875" />
+                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Medvěd" textAlignment="CENTER" wrappingWidth="178.232421875" />
                </children>
             </TextFlow>
             <VBox layoutX="1.0" onMouseMoved="#viditelnostObrazku" prefHeight="443.0" prefWidth="43.0" />
+            <TextFlow fx:id="flowerText" layoutX="238.0" layoutY="21.0" prefHeight="148.0" prefWidth="161.0" style="visibility: false;">
+               <children>
+                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Květina" />
+               </children>
+            </TextFlow>
+            <TextFlow fx:id="houseText" layoutX="415.0" layoutY="21.0" prefHeight="175.0" prefWidth="200.0" style="visibility: false;">
+               <children>
+                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Dům" />
+               </children>
+            </TextFlow>
+            <TextFlow fx:id="carText" layoutX="44.0" layoutY="217.0" prefHeight="122.0" prefWidth="200.0" style="visibility: false;">
+               <children>
+                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Auto" />
+               </children>
+            </TextFlow>
+            <TextFlow fx:id="monkeyText" layoutX="256.0" layoutY="174.0" prefHeight="165.0" prefWidth="144.0" style="visibility: false;">
+               <children>
+                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Opice" />
+               </children>
+            </TextFlow>
+            <TextFlow fx:id="windowText" layoutX="415.0" layoutY="200.0" prefHeight="139.0" prefWidth="200.0" style="visibility: false;">
+               <children>
+                  <Text stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Okno" />
+               </children>
+            </TextFlow>
+            <VBox layoutY="7.0" onMouseMoved="#viditelnostObrazku" prefHeight="15.0" prefWidth="640.0" />
+            <VBox layoutX="615.0" layoutY="8.0" onMouseMoved="#viditelnostObrazku" prefHeight="360.0" prefWidth="19.0" />
+            <VBox layoutX="23.0" layoutY="339.0" onMouseMoved="#viditelnostObrazku" prefHeight="28.0" prefWidth="605.0" />
+            <VBox layoutX="226.0" layoutY="15.0" onMouseMoved="#viditelnostObrazku" prefHeight="203.0" prefWidth="12.0" />
+            <VBox layoutX="399.0" layoutY="17.0" onMouseMoved="#viditelnostObrazku" prefHeight="343.0" prefWidth="19.0" />
          </children>
     </AnchorPane>
       <VBox prefHeight="200.0" prefWidth="100.0" />
